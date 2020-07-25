@@ -1,14 +1,21 @@
 package com.afterhours.game.direction;
 
-import com.afterhours.game.action.Action;
-
 public class DirectionParser {
     public Direction parseDirection(String input) {
         try {
-            return Direction.valueOf(input.toUpperCase());
+            for (Direction direction : Direction.values()) {
+                if (isDirection(input, direction)) {
+                    return direction;
+                }
+            }
+            return Direction.NONE;
         }
         catch (Exception e) {
             return Direction.NONE;
         }
+    }
+
+    private boolean isDirection(String input, Direction direction) {
+        return input.toUpperCase().contains(direction.getName()) || input.toUpperCase().contains(direction.getSingleLetter());
     }
 }
