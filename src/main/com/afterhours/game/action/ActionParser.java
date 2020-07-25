@@ -3,6 +3,9 @@ package com.afterhours.game.action;
 public class ActionParser {
     public Action parseAction(String input) {
         try {
+            if (input.toUpperCase().equals("I")) {
+                return Action.INVENTORY;
+            }
             for (Action action : Action.values()) {
                 if (input.toUpperCase().contains(action.name())) {
                     return action;

@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f038561f-7de2-469f-a62b-e6620829be49" name="Default Changelist" comment="" />
+    <list default="true" id="f038561f-7de2-469f-a62b-e6620829be49" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/com/afterhours/game/action/ActionParserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AfterHoursAtPuzzleMuseum.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AfterHoursAtPuzzleMuseum.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/AfterHoursAtPuzzleMuseum/com/aa/afterhours/game/action/ActionParserTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/afterhours/game/action/ActionParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/afterhours/game/action/ActionParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/com/aa/afterhours/game/action/ActionParserTest.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,14 +18,17 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ZueBrau93h6yPMPS43jnEPhEud" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -26,15 +36,90 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/com/afterhours/game" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.afterhours.game.action" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ActionParserTest">
+    <configuration name="ActionParserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AfterHoursAtPuzzleMuseum" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.afterhours.game.action.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.afterhours.game.action" />
+      <option name="MAIN_CLASS_NAME" value="com.afterhours.game.action.ActionParserTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ActionParserTest.parseAction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AfterHoursAtPuzzleMuseum" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.afterhours.game.action.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.afterhours.game.action" />
+      <option name="MAIN_CLASS_NAME" value="com.afterhours.game.action.ActionParserTest" />
+      <option name="METHOD_NAME" value="parseAction" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ActionParserTest.parseActionInventory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AfterHoursAtPuzzleMuseum" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.afterhours.game.action.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.afterhours.game.action" />
+      <option name="MAIN_CLASS_NAME" value="com.afterhours.game.action.ActionParserTest" />
+      <option name="METHOD_NAME" value="parseActionInventory" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ActionParserTest.parseActionMove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AfterHoursAtPuzzleMuseum" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.afterhours.game.action.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.afterhours.game.action" />
+      <option name="MAIN_CLASS_NAME" value="com.afterhours.game.action.ActionParserTest" />
+      <option name="METHOD_NAME" value="parseActionMove" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ActionParserTest.testParseAction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AfterHoursAtPuzzleMuseum" />
       <extension name="coverage">
@@ -51,7 +136,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+    <configuration default="true" type="JetRunConfigurationType">
       <module name="main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
@@ -64,7 +149,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <module name="main" />
       <option name="filePath" />
       <option name="vmParameters" />
@@ -100,21 +185,13 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ActionParserTest" />
+        <item itemvalue="JUnit.ActionParserTest.parseActionInventory" />
+        <item itemvalue="JUnit.ActionParserTest.parseActionMove" />
+        <item itemvalue="JUnit.ActionParserTest.parseAction" />
         <item itemvalue="JUnit.ActionParserTest.testParseAction" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -128,6 +205,7 @@
       <updated>1585693273304</updated>
       <workItem from="1585693274631" duration="296000" />
       <workItem from="1585693602750" duration="965000" />
+      <workItem from="1595656284724" duration="589000" />
     </task>
     <servers />
   </component>
@@ -135,37 +213,33 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1278" height="213" key="GridCell.Tab.0.bottom" timestamp="1585764116217">
-      <screen x="0" y="23" width="1440" height="824" />
+    <state width="1358" height="203" key="GridCell.Tab.0.bottom" timestamp="1595657473827">
+      <screen x="0" y="23" width="1440" height="834" />
     </state>
-    <state width="1278" height="213" key="GridCell.Tab.0.bottom/0.23.1440.824@0.23.1440.824" timestamp="1585764116217" />
-    <state width="1278" height="213" key="GridCell.Tab.0.center" timestamp="1585764116216">
-      <screen x="0" y="23" width="1440" height="824" />
+    <state width="1358" height="203" key="GridCell.Tab.0.bottom/0.23.1440.834@0.23.1440.834" timestamp="1595657473827" />
+    <state width="1358" height="203" key="GridCell.Tab.0.center" timestamp="1595657473827">
+      <screen x="0" y="23" width="1440" height="834" />
     </state>
-    <state width="1278" height="213" key="GridCell.Tab.0.center/0.23.1440.824@0.23.1440.824" timestamp="1585764116216" />
-    <state width="1278" height="213" key="GridCell.Tab.0.left" timestamp="1585764116216">
-      <screen x="0" y="23" width="1440" height="824" />
+    <state width="1358" height="203" key="GridCell.Tab.0.center/0.23.1440.834@0.23.1440.834" timestamp="1595657473827" />
+    <state width="1358" height="203" key="GridCell.Tab.0.left" timestamp="1595657473826">
+      <screen x="0" y="23" width="1440" height="834" />
     </state>
-    <state width="1278" height="213" key="GridCell.Tab.0.left/0.23.1440.824@0.23.1440.824" timestamp="1585764116216" />
-    <state width="1278" height="213" key="GridCell.Tab.0.right" timestamp="1585764116216">
-      <screen x="0" y="23" width="1440" height="824" />
+    <state width="1358" height="203" key="GridCell.Tab.0.left/0.23.1440.834@0.23.1440.834" timestamp="1595657473826" />
+    <state width="1358" height="203" key="GridCell.Tab.0.right" timestamp="1595657473827">
+      <screen x="0" y="23" width="1440" height="834" />
     </state>
-    <state width="1278" height="213" key="GridCell.Tab.0.right/0.23.1440.824@0.23.1440.824" timestamp="1585764116216" />
-    <state x="399" y="23" width="1024" height="825" key="SettingsEditor" timestamp="1585693792273">
-      <screen x="0" y="23" width="1440" height="825" />
+    <state width="1358" height="203" key="GridCell.Tab.0.right/0.23.1440.834@0.23.1440.834" timestamp="1595657473827" />
+    <state x="459" y="267" key="com.intellij.ide.util.TipDialog" timestamp="1595656337724">
+      <screen x="0" y="23" width="1440" height="834" />
     </state>
-    <state x="399" y="23" width="1024" height="825" key="SettingsEditor/0.23.1440.825@0.23.1440.825" timestamp="1585693792273" />
-    <state x="575" y="220" key="chooseDestDirectoryDialog" timestamp="1585694015065">
-      <screen x="0" y="23" width="1440" height="825" />
+    <state x="459" y="267" key="com.intellij.ide.util.TipDialog/0.23.1440.834@0.23.1440.834" timestamp="1595656337724" />
+    <state x="438" y="397" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1595656547687">
+      <screen x="0" y="23" width="1440" height="834" />
     </state>
-    <state x="575" y="220" key="chooseDestDirectoryDialog/0.23.1440.825@0.23.1440.825" timestamp="1585694015065" />
-    <state x="492" y="336" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1585694201915">
-      <screen x="0" y="23" width="1440" height="825" />
+    <state x="438" y="397" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.23.1440.834@0.23.1440.834" timestamp="1595656547687" />
+    <state x="488" y="230" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1595656509553">
+      <screen x="0" y="23" width="1440" height="834" />
     </state>
-    <state x="492" y="336" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.23.1440.825@0.23.1440.825" timestamp="1585694201915" />
-    <state x="0" y="23" key="new project wizard" timestamp="1585693749435">
-      <screen x="0" y="23" width="1440" height="825" />
-    </state>
-    <state x="0" y="23" key="new project wizard/0.23.1440.825@0.23.1440.825" timestamp="1585693749435" />
+    <state x="488" y="230" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1440.834@0.23.1440.834" timestamp="1595656509553" />
   </component>
 </project>
