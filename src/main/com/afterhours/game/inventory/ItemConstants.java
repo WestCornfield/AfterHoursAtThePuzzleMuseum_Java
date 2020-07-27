@@ -49,4 +49,6 @@ public class ItemConstants {
     public static String BRASS_KEY_DESCRIPTION_TEXT = "Examining the key, you see a small engraving which reads \"KEY TO LOCK #1\"";
 
     public static String NAIL_FILE_DESCRIPTION_TEXT = "It's a nail file. You can use it fo file your nails.";
+
+    public static String BADGE_DESCRIPTION_TEXT = "Your trusty security badge";
 }

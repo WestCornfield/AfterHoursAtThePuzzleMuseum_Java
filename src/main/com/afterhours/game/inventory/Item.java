@@ -2,7 +2,7 @@ package com.afterhours.game.inventory;
 
 public enum Item {
     NIGHTSTICK("It's a nightstick."),
-    BADGE("Your trusty security badge"),
+    BADGE(ItemConstants.BADGE_DESCRIPTION_TEXT),
     LIGHTER(ItemConstants.LIGHTER_DESCRIPTION_TEXT),
     LOST_BOX(ItemConstants.LOST_BOX_DESCRIPTION_TEXT),
     STICK_OF_GUM("It's a stick of gum."),
@@ -23,6 +23,8 @@ public enum Item {
 
     Item(String description) {
         this.description = description;
+        this.firstDescription = description;
+        this.hasBeenSeen = true;
     }
 
     Item(String description, String firstDescription) {
