@@ -45,4 +45,8 @@ public class Player {
         }
         return "Pardon?";
     }
+
+    public void pickup(Item item) {
+        inventory.addToInventory(item);
+    }
 }

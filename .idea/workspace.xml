@@ -20,12 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f038561f-7de2-469f-a62b-e6620829be49" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/com/afterhours/game/strategy/GibberishProcessorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/com/afterhours/game/strategy/InventoryProcessorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/AfterHoursAtPuzzleMuseum/com/afterhours/game/action/ActionParserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/AfterHoursAtPuzzleMuseum/com/afterhours/game/action/ActionParserTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/com/afterhours/game/direction/DirectionParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/afterhours/game/direction/DirectionParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/afterhours/game/action/ActionParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/afterhours/game/action/ActionParserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/afterhours/game/strategy/ExamineProcessorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/afterhours/game/strategy/ExamineProcessorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/afterhours/game/inventory/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/afterhours/game/inventory/Inventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/afterhours/game/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/afterhours/game/player/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,22 +97,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExamineProcessorTest.testProcessActionLookAtGun" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AfterHoursAtPuzzleMuseum" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.afterhours.game.strategy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.afterhours.game.strategy" />
-      <option name="MAIN_CLASS_NAME" value="com.afterhours.game.strategy.ExamineProcessorTest" />
-      <option name="METHOD_NAME" value="testProcessActionLookAtGun" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ExamineProcessorTest.testProcessActionLookAtObjectOutsideLobby" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AfterHoursAtPuzzleMuseum" />
       <extension name="coverage">
@@ -142,6 +124,22 @@
       <option name="PACKAGE_NAME" value="com.afterhours.game.strategy" />
       <option name="MAIN_CLASS_NAME" value="com.afterhours.game.strategy.GibberishProcessorTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InventoryProcessorTest.testInventoryProcessor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AfterHoursAtPuzzleMuseum" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.afterhours.game.strategy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.afterhours.game.strategy" />
+      <option name="MAIN_CLASS_NAME" value="com.afterhours.game.strategy.InventoryProcessorTest" />
+      <option name="METHOD_NAME" value="testInventoryProcessor" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -196,10 +194,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in AfterHoursAtPuzzleMuseum" />
+        <item itemvalue="JUnit.InventoryProcessorTest.testInventoryProcessor" />
         <item itemvalue="JUnit.DirectionParserTest.parseDirectionDown" />
         <item itemvalue="JUnit.GibberishProcessorTest" />
         <item itemvalue="JUnit.ExamineProcessorTest.testProcessActionLookAtObjectOutsideLobby" />
-        <item itemvalue="JUnit.ExamineProcessorTest.testProcessActionLookAtGun" />
       </list>
     </recent_temporary>
   </component>
@@ -238,45 +236,45 @@
       <screen x="0" y="23" width="1440" height="833" />
     </state>
     <state x="120" y="143" width="1200" height="594" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1440.833@0.23.1440.833" timestamp="1595816156933" />
-    <state width="1358" height="252" key="GridCell.Tab.0.bottom" timestamp="1595817884571">
+    <state width="1358" height="203" key="GridCell.Tab.0.bottom" timestamp="1595818835942">
       <screen x="0" y="23" width="1440" height="833" />
     </state>
-    <state width="1358" height="252" key="GridCell.Tab.0.bottom/0.23.1440.833@0.23.1440.833" timestamp="1595817884571" />
+    <state width="1358" height="203" key="GridCell.Tab.0.bottom/0.23.1440.833@0.23.1440.833" timestamp="1595818835942" />
     <state width="1358" height="203" key="GridCell.Tab.0.bottom/0.23.1440.834@0.23.1440.834" timestamp="1595815630336" />
-    <state width="1358" height="252" key="GridCell.Tab.0.center" timestamp="1595817884571">
+    <state width="1358" height="203" key="GridCell.Tab.0.center" timestamp="1595818835941">
       <screen x="0" y="23" width="1440" height="833" />
     </state>
-    <state width="1358" height="252" key="GridCell.Tab.0.center/0.23.1440.833@0.23.1440.833" timestamp="1595817884571" />
+    <state width="1358" height="203" key="GridCell.Tab.0.center/0.23.1440.833@0.23.1440.833" timestamp="1595818835941" />
     <state width="1358" height="203" key="GridCell.Tab.0.center/0.23.1440.834@0.23.1440.834" timestamp="1595815630335" />
-    <state width="1358" height="252" key="GridCell.Tab.0.left" timestamp="1595817884570">
+    <state width="1358" height="203" key="GridCell.Tab.0.left" timestamp="1595818835940">
       <screen x="0" y="23" width="1440" height="833" />
     </state>
-    <state width="1358" height="252" key="GridCell.Tab.0.left/0.23.1440.833@0.23.1440.833" timestamp="1595817884570" />
+    <state width="1358" height="203" key="GridCell.Tab.0.left/0.23.1440.833@0.23.1440.833" timestamp="1595818835940" />
     <state width="1358" height="203" key="GridCell.Tab.0.left/0.23.1440.834@0.23.1440.834" timestamp="1595815630335" />
-    <state width="1358" height="252" key="GridCell.Tab.0.right" timestamp="1595817884571">
+    <state width="1358" height="203" key="GridCell.Tab.0.right" timestamp="1595818835941">
       <screen x="0" y="23" width="1440" height="833" />
     </state>
-    <state width="1358" height="252" key="GridCell.Tab.0.right/0.23.1440.833@0.23.1440.833" timestamp="1595817884571" />
+    <state width="1358" height="203" key="GridCell.Tab.0.right/0.23.1440.833@0.23.1440.833" timestamp="1595818835941" />
     <state width="1358" height="203" key="GridCell.Tab.0.right/0.23.1440.834@0.23.1440.834" timestamp="1595815630335" />
-    <state width="1358" height="252" key="GridCell.Tab.1.bottom" timestamp="1595817884994">
+    <state width="1358" height="252" key="GridCell.Tab.1.bottom" timestamp="1595817918171">
       <screen x="0" y="23" width="1440" height="833" />
     </state>
-    <state width="1358" height="252" key="GridCell.Tab.1.bottom/0.23.1440.833@0.23.1440.833" timestamp="1595817884994" />
+    <state width="1358" height="252" key="GridCell.Tab.1.bottom/0.23.1440.833@0.23.1440.833" timestamp="1595817918171" />
     <state width="1358" height="252" key="GridCell.Tab.1.bottom/0.23.1440.834@0.23.1440.834" timestamp="1595658504164" />
-    <state width="1358" height="252" key="GridCell.Tab.1.center" timestamp="1595817884994">
+    <state width="1358" height="252" key="GridCell.Tab.1.center" timestamp="1595817918170">
       <screen x="0" y="23" width="1440" height="833" />
     </state>
-    <state width="1358" height="252" key="GridCell.Tab.1.center/0.23.1440.833@0.23.1440.833" timestamp="1595817884994" />
+    <state width="1358" height="252" key="GridCell.Tab.1.center/0.23.1440.833@0.23.1440.833" timestamp="1595817918170" />
     <state width="1358" height="252" key="GridCell.Tab.1.center/0.23.1440.834@0.23.1440.834" timestamp="1595658504164" />
-    <state width="1358" height="252" key="GridCell.Tab.1.left" timestamp="1595817884994">
+    <state width="1358" height="252" key="GridCell.Tab.1.left" timestamp="1595817918170">
       <screen x="0" y="23" width="1440" height="833" />
     </state>
-    <state width="1358" height="252" key="GridCell.Tab.1.left/0.23.1440.833@0.23.1440.833" timestamp="1595817884994" />
+    <state width="1358" height="252" key="GridCell.Tab.1.left/0.23.1440.833@0.23.1440.833" timestamp="1595817918170" />
     <state width="1358" height="252" key="GridCell.Tab.1.left/0.23.1440.834@0.23.1440.834" timestamp="1595658504163" />
-    <state width="1358" height="252" key="GridCell.Tab.1.right" timestamp="1595817884994">
+    <state width="1358" height="252" key="GridCell.Tab.1.right" timestamp="1595817918170">
       <screen x="0" y="23" width="1440" height="833" />
     </state>
-    <state width="1358" height="252" key="GridCell.Tab.1.right/0.23.1440.833@0.23.1440.833" timestamp="1595817884994" />
+    <state width="1358" height="252" key="GridCell.Tab.1.right/0.23.1440.833@0.23.1440.833" timestamp="1595817918170" />
     <state width="1358" height="252" key="GridCell.Tab.1.right/0.23.1440.834@0.23.1440.834" timestamp="1595658504164" />
     <state x="459" y="267" key="com.intellij.ide.util.TipDialog" timestamp="1595656337724">
       <screen x="0" y="23" width="1440" height="834" />
