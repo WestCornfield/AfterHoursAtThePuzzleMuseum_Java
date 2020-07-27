@@ -9,8 +9,6 @@ public class MovementProcessor implements ProcessorStrategy {
         if (input.length == 1) {
             return "Move where?";
         } else {
-            int x = player.getLocation().getX();
-            int y = player.getLocation().getY();
             DirectionParser directionParser = new DirectionParser();
             Direction dir = directionParser.parseDirection(input[input.length-1]);
             switch (dir) {

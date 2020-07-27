@@ -26,6 +26,12 @@ class ActionParserTest {
     }
 
     @Test
+    void parseActionNorth() {
+        Action action = testObj.parseAction("north");
+        assertEquals(action.name(), "MOVE");
+    }
+
+    @Test
     void parseActionTalk() {
         Action action = testObj.parseAction("talk to beth");
         assertEquals(action.name(), "TALK");
