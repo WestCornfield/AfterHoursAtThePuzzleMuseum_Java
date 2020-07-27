@@ -20,10 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f038561f-7de2-469f-a62b-e6620829be49" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/com/afterhours/game/strategy/InventoryProcessorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/com/afterhours/game/strategy/MovementProcessorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/com/afterhours/game/inventory/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/afterhours/game/inventory/Inventory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/com/afterhours/game/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/afterhours/game/player/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +70,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in AfterHoursAtPuzzleMuseum">
+  <component name="RunManager" selected="JUnit.MovementProcessorTest.movementProcessorTest">
     <configuration name="All in AfterHoursAtPuzzleMuseum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AfterHoursAtPuzzleMuseum" />
       <option name="PACKAGE_NAME" value="" />
@@ -97,37 +95,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExamineProcessorTest.testProcessActionLookAtObjectOutsideLobby" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AfterHoursAtPuzzleMuseum" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.afterhours.game.strategy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.afterhours.game.strategy" />
-      <option name="MAIN_CLASS_NAME" value="com.afterhours.game.strategy.ExamineProcessorTest" />
-      <option name="METHOD_NAME" value="testProcessActionLookAtObjectOutsideLobby" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GibberishProcessorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AfterHoursAtPuzzleMuseum" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.afterhours.game.strategy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.afterhours.game.strategy" />
-      <option name="MAIN_CLASS_NAME" value="com.afterhours.game.strategy.GibberishProcessorTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="InventoryProcessorTest.testInventoryProcessor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AfterHoursAtPuzzleMuseum" />
       <extension name="coverage">
@@ -139,6 +106,37 @@
       <option name="PACKAGE_NAME" value="com.afterhours.game.strategy" />
       <option name="MAIN_CLASS_NAME" value="com.afterhours.game.strategy.InventoryProcessorTest" />
       <option name="METHOD_NAME" value="testInventoryProcessor" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MovementProcessorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AfterHoursAtPuzzleMuseum" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.afterhours.game.strategy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.afterhours.game.strategy" />
+      <option name="MAIN_CLASS_NAME" value="com.afterhours.game.strategy.MovementProcessorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MovementProcessorTest.movementProcessorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AfterHoursAtPuzzleMuseum" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.afterhours.game.strategy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.afterhours.game.strategy" />
+      <option name="MAIN_CLASS_NAME" value="com.afterhours.game.strategy.MovementProcessorTest" />
+      <option name="METHOD_NAME" value="movementProcessorTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -193,11 +191,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MovementProcessorTest.movementProcessorTest" />
+        <item itemvalue="JUnit.MovementProcessorTest" />
         <item itemvalue="JUnit.All in AfterHoursAtPuzzleMuseum" />
         <item itemvalue="JUnit.InventoryProcessorTest.testInventoryProcessor" />
         <item itemvalue="JUnit.DirectionParserTest.parseDirectionDown" />
-        <item itemvalue="JUnit.GibberishProcessorTest" />
-        <item itemvalue="JUnit.ExamineProcessorTest.testProcessActionLookAtObjectOutsideLobby" />
       </list>
     </recent_temporary>
   </component>
@@ -232,49 +230,49 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="120" y="143" width="1200" height="594" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1595816156933">
+    <state x="120" y="143" width="1200" height="594" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1595819626002">
       <screen x="0" y="23" width="1440" height="833" />
     </state>
-    <state x="120" y="143" width="1200" height="594" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1440.833@0.23.1440.833" timestamp="1595816156933" />
-    <state width="1358" height="203" key="GridCell.Tab.0.bottom" timestamp="1595818835942">
+    <state x="120" y="143" width="1200" height="594" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1440.833@0.23.1440.833" timestamp="1595819626002" />
+    <state width="1358" height="203" key="GridCell.Tab.0.bottom" timestamp="1595819771102">
       <screen x="0" y="23" width="1440" height="833" />
     </state>
-    <state width="1358" height="203" key="GridCell.Tab.0.bottom/0.23.1440.833@0.23.1440.833" timestamp="1595818835942" />
+    <state width="1358" height="203" key="GridCell.Tab.0.bottom/0.23.1440.833@0.23.1440.833" timestamp="1595819771102" />
     <state width="1358" height="203" key="GridCell.Tab.0.bottom/0.23.1440.834@0.23.1440.834" timestamp="1595815630336" />
-    <state width="1358" height="203" key="GridCell.Tab.0.center" timestamp="1595818835941">
+    <state width="1358" height="203" key="GridCell.Tab.0.center" timestamp="1595819771102">
       <screen x="0" y="23" width="1440" height="833" />
     </state>
-    <state width="1358" height="203" key="GridCell.Tab.0.center/0.23.1440.833@0.23.1440.833" timestamp="1595818835941" />
+    <state width="1358" height="203" key="GridCell.Tab.0.center/0.23.1440.833@0.23.1440.833" timestamp="1595819771102" />
     <state width="1358" height="203" key="GridCell.Tab.0.center/0.23.1440.834@0.23.1440.834" timestamp="1595815630335" />
-    <state width="1358" height="203" key="GridCell.Tab.0.left" timestamp="1595818835940">
+    <state width="1358" height="203" key="GridCell.Tab.0.left" timestamp="1595819771101">
       <screen x="0" y="23" width="1440" height="833" />
     </state>
-    <state width="1358" height="203" key="GridCell.Tab.0.left/0.23.1440.833@0.23.1440.833" timestamp="1595818835940" />
+    <state width="1358" height="203" key="GridCell.Tab.0.left/0.23.1440.833@0.23.1440.833" timestamp="1595819771101" />
     <state width="1358" height="203" key="GridCell.Tab.0.left/0.23.1440.834@0.23.1440.834" timestamp="1595815630335" />
-    <state width="1358" height="203" key="GridCell.Tab.0.right" timestamp="1595818835941">
+    <state width="1358" height="203" key="GridCell.Tab.0.right" timestamp="1595819771102">
       <screen x="0" y="23" width="1440" height="833" />
     </state>
-    <state width="1358" height="203" key="GridCell.Tab.0.right/0.23.1440.833@0.23.1440.833" timestamp="1595818835941" />
+    <state width="1358" height="203" key="GridCell.Tab.0.right/0.23.1440.833@0.23.1440.833" timestamp="1595819771102" />
     <state width="1358" height="203" key="GridCell.Tab.0.right/0.23.1440.834@0.23.1440.834" timestamp="1595815630335" />
-    <state width="1358" height="252" key="GridCell.Tab.1.bottom" timestamp="1595817918171">
+    <state width="1358" height="252" key="GridCell.Tab.1.bottom" timestamp="1595819067588">
       <screen x="0" y="23" width="1440" height="833" />
     </state>
-    <state width="1358" height="252" key="GridCell.Tab.1.bottom/0.23.1440.833@0.23.1440.833" timestamp="1595817918171" />
+    <state width="1358" height="252" key="GridCell.Tab.1.bottom/0.23.1440.833@0.23.1440.833" timestamp="1595819067588" />
     <state width="1358" height="252" key="GridCell.Tab.1.bottom/0.23.1440.834@0.23.1440.834" timestamp="1595658504164" />
-    <state width="1358" height="252" key="GridCell.Tab.1.center" timestamp="1595817918170">
+    <state width="1358" height="252" key="GridCell.Tab.1.center" timestamp="1595819067588">
       <screen x="0" y="23" width="1440" height="833" />
     </state>
-    <state width="1358" height="252" key="GridCell.Tab.1.center/0.23.1440.833@0.23.1440.833" timestamp="1595817918170" />
+    <state width="1358" height="252" key="GridCell.Tab.1.center/0.23.1440.833@0.23.1440.833" timestamp="1595819067588" />
     <state width="1358" height="252" key="GridCell.Tab.1.center/0.23.1440.834@0.23.1440.834" timestamp="1595658504164" />
-    <state width="1358" height="252" key="GridCell.Tab.1.left" timestamp="1595817918170">
+    <state width="1358" height="252" key="GridCell.Tab.1.left" timestamp="1595819067587">
       <screen x="0" y="23" width="1440" height="833" />
     </state>
-    <state width="1358" height="252" key="GridCell.Tab.1.left/0.23.1440.833@0.23.1440.833" timestamp="1595817918170" />
+    <state width="1358" height="252" key="GridCell.Tab.1.left/0.23.1440.833@0.23.1440.833" timestamp="1595819067587" />
     <state width="1358" height="252" key="GridCell.Tab.1.left/0.23.1440.834@0.23.1440.834" timestamp="1595658504163" />
-    <state width="1358" height="252" key="GridCell.Tab.1.right" timestamp="1595817918170">
+    <state width="1358" height="252" key="GridCell.Tab.1.right" timestamp="1595819067588">
       <screen x="0" y="23" width="1440" height="833" />
     </state>
-    <state width="1358" height="252" key="GridCell.Tab.1.right/0.23.1440.833@0.23.1440.833" timestamp="1595817918170" />
+    <state width="1358" height="252" key="GridCell.Tab.1.right/0.23.1440.833@0.23.1440.833" timestamp="1595819067588" />
     <state width="1358" height="252" key="GridCell.Tab.1.right/0.23.1440.834@0.23.1440.834" timestamp="1595658504164" />
     <state x="459" y="267" key="com.intellij.ide.util.TipDialog" timestamp="1595656337724">
       <screen x="0" y="23" width="1440" height="834" />
@@ -301,6 +299,16 @@
           <url>file://$PROJECT_DIR$/src/test/com/afterhours/game/direction/DirectionParserTest.java</url>
           <line>41</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/com/afterhours/game/inventory/Inventory.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/com/afterhours/game/strategy/InventoryProcessorTest.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
