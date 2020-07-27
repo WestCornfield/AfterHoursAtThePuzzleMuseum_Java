@@ -1,5 +1,31 @@
 package com.afterhours.game.action;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public enum Action {
-    MOVE, TALK, LOOK, INVENTORY, GIBBERISH
+    MOVE(new String[]{"move", "go"}),
+    TALK(new String[]{"talk", "say"}),
+    LOOK(new String[]{"look", "examine"}),
+    INVENTORY(new String[]{"inventory", "i"}),
+    GIBBERISH;
+
+    private List<String> synonyms;
+
+    Action() {
+        this.synonyms = new ArrayList<>();
+    }
+
+    Action(String[] synonyms) {
+        this.synonyms = new ArrayList<>();
+        for (String synonym: synonyms) {
+            this.synonyms.add(synonym);
+        }
+
+    }
+
+    public List<String> getSynonyms() {
+        return synonyms;
+    }
+
 }
