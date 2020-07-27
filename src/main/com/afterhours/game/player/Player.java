@@ -30,6 +30,18 @@ public class Player {
         return "In your possessions, you have " + output + "and the lint in your pockets.";
     }
 
+    public String look(int x, int y) {
+        Location currentLocation = location;
+        int newX = location.getX() + x;
+        int newY = location.getY() + y;
+        for (Location location : Location.values()) {
+            if (location.getX() == newX && location.getY() == newY) {
+                return location.getDescription();
+            }
+        }
+        return currentLocation.getDescription();
+    }
+
     public String move(int x, int y) {
         Location currentLocation = location;
         int newX = location.getX() + x;

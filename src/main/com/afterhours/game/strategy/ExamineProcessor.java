@@ -1,18 +1,36 @@
 package com.afterhours.game.strategy;
 
+import com.afterhours.game.direction.Direction;
+import com.afterhours.game.direction.DirectionParser;
 import com.afterhours.game.inventory.Inventory;
 import com.afterhours.game.inventory.Item;
-import com.afterhours.game.location.Location;
 import com.afterhours.game.player.Player;
 
 public class ExamineProcessor implements ProcessorStrategy {
+    DirectionParser directionParser = new DirectionParser();
+
     public String processAction(Player player, String... input) {
         if (input.length == 1) {
             return player.getLocation().getDescription();
+        }
+
+        Direction directionToLook = directionParser.parseDirection(input[input.length-1]);
+        if (directionToLook != Direction.NONE) {
+            switch (directionToLook) {
+                case NORTH:
+                    return player.look(0, 1);
+                case SOUTH:
+                    return player.look(0, -1);
+                case WEST:
+                    return player.look(-1, 0);
+                case EAST:
+                    return player.look(1, 0);
+                default:
+                    return player.look(0, 0);
+            }
         } else {
             String itemToSee = generateItemToSee(input);
             for (Item item : Item.values()) {
-
                 if (itemToSee.toUpperCase().equals(item.name())) {
                     return (canSeeFromHere(player, item)) ? item.getDescription() : "You can't see that from here";
                 }
