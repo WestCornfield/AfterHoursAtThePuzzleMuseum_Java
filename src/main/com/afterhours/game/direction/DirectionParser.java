@@ -16,6 +16,6 @@ public class DirectionParser {
     }
 
     private boolean isDirection(String input, Direction direction) {
-        return input.toUpperCase().contains(direction.getName()) || input.toUpperCase().contains(direction.getSingleLetter());
+        return input.toUpperCase().contains(direction.getName()) || input.toUpperCase().equals(direction.getSingleLetter());
     }
 }

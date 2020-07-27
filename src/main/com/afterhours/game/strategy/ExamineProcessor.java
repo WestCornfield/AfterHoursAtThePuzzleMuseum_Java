@@ -1,5 +1,6 @@
 package com.afterhours.game.strategy;
 
+import com.afterhours.game.inventory.Inventory;
 import com.afterhours.game.inventory.Item;
 import com.afterhours.game.location.Location;
 import com.afterhours.game.player.Player;
@@ -13,8 +14,7 @@ public class ExamineProcessor implements ProcessorStrategy {
             for (Item item : Item.values()) {
 
                 if (itemToSee.toUpperCase().equals(item.name())) {
-                    Location currentLocation = player.getLocation();
-                    return (currentLocation.getItemsList().contains(item)) ? item.getDescription() : "You can't see that from here";
+                    return (canSeeFromHere(player, item)) ? item.getDescription() : "You can't see that from here";
                 }
             }
             return "Look at what?";
@@ -32,4 +32,12 @@ public class ExamineProcessor implements ProcessorStrategy {
 
         return item.toString();
     }
+
+    private boolean canSeeFromHere(Player player, Item item) {
+        Inventory inventory = player.getInventory();
+        boolean playerHasItem = inventory.getInventory().contains(item);
+        boolean playerIsInRoomWithItem = player.getLocation().getItemsList().contains(item);
+        return playerHasItem || playerIsInRoomWithItem;
+    }
+
 }

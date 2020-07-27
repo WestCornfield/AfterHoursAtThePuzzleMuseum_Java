@@ -17,7 +17,11 @@ public class Player {
         return location;
     }
 
-    public String getInventory() {
+    public Inventory getInventory() {
+        return inventory;
+    }
+
+    public String printInventory() {
         StringBuilder output = new StringBuilder();
         for (Item item : inventory.getInventory()) {
             output.append("a " + item.toString().toLowerCase() + ", ");
