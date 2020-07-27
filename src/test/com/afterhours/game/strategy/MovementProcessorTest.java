@@ -15,7 +15,8 @@ public class MovementProcessorTest {
         String[] goNorth = {"go", "north"};
         String[] goSouth = {"go", "south"};
         String[] goEast = {"move", "east"};
-        String[] goWest = {"move", "west"};
+        String[] goWest = {"west"};
+        String[] go = {"go"};
 
         String testValue = testObj.processAction(player, goNorth);
         assertEquals(testValue, LocationConstants.KEYHOLE_NEWSPAPER_DESCRIPTION_TEXT);
@@ -43,6 +44,9 @@ public class MovementProcessorTest {
 
         testValue = testObj.processAction(player, goWest);
         assertEquals(testValue, "You can't go that way.");
+
+        testValue = testObj.processAction(player, go);
+        assertEquals(testValue, "Move where?");
     }
 
 }
