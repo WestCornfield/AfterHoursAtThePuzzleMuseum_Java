@@ -36,7 +36,7 @@ public class Player {
         int newY = location.getY() + y;
         for (Location location : Location.values()) {
             if (location.getX() == newX && location.getY() == newY) {
-                return location.getDescription();
+                return location.getOutsideDescription();
             }
         }
         return currentLocation.getDescription();

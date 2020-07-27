@@ -21,10 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f038561f-7de2-469f-a62b-e6620829be49" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AfterHoursAtPuzzleMuseum/com/afterhours/game/player/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AfterHoursAtPuzzleMuseum/com/afterhours/game/player/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AfterHoursAtPuzzleMuseum/com/afterhours/game/strategy/ExamineProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AfterHoursAtPuzzleMuseum/com/afterhours/game/strategy/ExamineProcessor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/afterhours/game/location/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/afterhours/game/location/Location.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/com/afterhours/game/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/afterhours/game/player/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/com/afterhours/game/strategy/ExamineProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/afterhours/game/strategy/ExamineProcessor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +72,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in AfterHoursAtPuzzleMuseum">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.afterhours.game.Main" />
       <module name="AfterHoursAtPuzzleMuseum" />
@@ -193,9 +191,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.All in AfterHoursAtPuzzleMuseum" />
         <item itemvalue="JUnit.ExamineProcessorTest.testProcessActionLook" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.MovementProcessorTest.movementProcessorTest" />
         <item itemvalue="JUnit.ActionParserTest.parseActionNorth" />
       </list>
@@ -240,45 +238,45 @@
       <screen x="0" y="23" width="1440" height="833" />
     </state>
     <state x="479" y="306" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1440.833@0.23.1440.833" timestamp="1595823830415" />
-    <state width="1358" height="252" key="GridCell.Tab.0.bottom" timestamp="1595825149875">
+    <state width="1358" height="203" key="GridCell.Tab.0.bottom" timestamp="1595826260309">
       <screen x="0" y="23" width="1440" height="833" />
     </state>
-    <state width="1358" height="252" key="GridCell.Tab.0.bottom/0.23.1440.833@0.23.1440.833" timestamp="1595825149875" />
+    <state width="1358" height="203" key="GridCell.Tab.0.bottom/0.23.1440.833@0.23.1440.833" timestamp="1595826260309" />
     <state width="1358" height="203" key="GridCell.Tab.0.bottom/0.23.1440.834@0.23.1440.834" timestamp="1595815630336" />
-    <state width="1358" height="252" key="GridCell.Tab.0.center" timestamp="1595825149874">
+    <state width="1358" height="203" key="GridCell.Tab.0.center" timestamp="1595826260309">
       <screen x="0" y="23" width="1440" height="833" />
     </state>
-    <state width="1358" height="252" key="GridCell.Tab.0.center/0.23.1440.833@0.23.1440.833" timestamp="1595825149874" />
+    <state width="1358" height="203" key="GridCell.Tab.0.center/0.23.1440.833@0.23.1440.833" timestamp="1595826260309" />
     <state width="1358" height="203" key="GridCell.Tab.0.center/0.23.1440.834@0.23.1440.834" timestamp="1595815630335" />
-    <state width="1358" height="252" key="GridCell.Tab.0.left" timestamp="1595825149873">
+    <state width="1358" height="203" key="GridCell.Tab.0.left" timestamp="1595826260308">
       <screen x="0" y="23" width="1440" height="833" />
     </state>
-    <state width="1358" height="252" key="GridCell.Tab.0.left/0.23.1440.833@0.23.1440.833" timestamp="1595825149873" />
+    <state width="1358" height="203" key="GridCell.Tab.0.left/0.23.1440.833@0.23.1440.833" timestamp="1595826260308" />
     <state width="1358" height="203" key="GridCell.Tab.0.left/0.23.1440.834@0.23.1440.834" timestamp="1595815630335" />
-    <state width="1358" height="252" key="GridCell.Tab.0.right" timestamp="1595825149874">
+    <state width="1358" height="203" key="GridCell.Tab.0.right" timestamp="1595826260309">
       <screen x="0" y="23" width="1440" height="833" />
     </state>
-    <state width="1358" height="252" key="GridCell.Tab.0.right/0.23.1440.833@0.23.1440.833" timestamp="1595825149874" />
+    <state width="1358" height="203" key="GridCell.Tab.0.right/0.23.1440.833@0.23.1440.833" timestamp="1595826260309" />
     <state width="1358" height="203" key="GridCell.Tab.0.right/0.23.1440.834@0.23.1440.834" timestamp="1595815630335" />
-    <state width="1358" height="252" key="GridCell.Tab.1.bottom" timestamp="1595825150316">
+    <state width="1358" height="252" key="GridCell.Tab.1.bottom" timestamp="1595825234002">
       <screen x="0" y="23" width="1440" height="833" />
     </state>
-    <state width="1358" height="252" key="GridCell.Tab.1.bottom/0.23.1440.833@0.23.1440.833" timestamp="1595825150316" />
+    <state width="1358" height="252" key="GridCell.Tab.1.bottom/0.23.1440.833@0.23.1440.833" timestamp="1595825234002" />
     <state width="1358" height="252" key="GridCell.Tab.1.bottom/0.23.1440.834@0.23.1440.834" timestamp="1595658504164" />
-    <state width="1358" height="252" key="GridCell.Tab.1.center" timestamp="1595825150315">
+    <state width="1358" height="252" key="GridCell.Tab.1.center" timestamp="1595825234001">
       <screen x="0" y="23" width="1440" height="833" />
     </state>
-    <state width="1358" height="252" key="GridCell.Tab.1.center/0.23.1440.833@0.23.1440.833" timestamp="1595825150315" />
+    <state width="1358" height="252" key="GridCell.Tab.1.center/0.23.1440.833@0.23.1440.833" timestamp="1595825234001" />
     <state width="1358" height="252" key="GridCell.Tab.1.center/0.23.1440.834@0.23.1440.834" timestamp="1595658504164" />
-    <state width="1358" height="252" key="GridCell.Tab.1.left" timestamp="1595825150315">
+    <state width="1358" height="252" key="GridCell.Tab.1.left" timestamp="1595825234001">
       <screen x="0" y="23" width="1440" height="833" />
     </state>
-    <state width="1358" height="252" key="GridCell.Tab.1.left/0.23.1440.833@0.23.1440.833" timestamp="1595825150315" />
+    <state width="1358" height="252" key="GridCell.Tab.1.left/0.23.1440.833@0.23.1440.833" timestamp="1595825234001" />
     <state width="1358" height="252" key="GridCell.Tab.1.left/0.23.1440.834@0.23.1440.834" timestamp="1595658504163" />
-    <state width="1358" height="252" key="GridCell.Tab.1.right" timestamp="1595825150315">
+    <state width="1358" height="252" key="GridCell.Tab.1.right" timestamp="1595825234002">
       <screen x="0" y="23" width="1440" height="833" />
     </state>
-    <state width="1358" height="252" key="GridCell.Tab.1.right/0.23.1440.833@0.23.1440.833" timestamp="1595825150315" />
+    <state width="1358" height="252" key="GridCell.Tab.1.right/0.23.1440.833@0.23.1440.833" timestamp="1595825234002" />
     <state width="1358" height="252" key="GridCell.Tab.1.right/0.23.1440.834@0.23.1440.834" timestamp="1595658504164" />
     <state x="459" y="267" key="com.intellij.ide.util.TipDialog" timestamp="1595656337724">
       <screen x="0" y="23" width="1440" height="834" />
@@ -324,6 +322,14 @@
           <url>file://$PROJECT_DIR$/src/test/com/afterhours/game/strategy/ExamineProcessorTest.java</url>
           <line>14</line>
           <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/com/afterhours/game/location/Location.java</url>
+          <line>27</line>
+          <properties class="com.afterhours.game.location.Location" method="getDescription">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
