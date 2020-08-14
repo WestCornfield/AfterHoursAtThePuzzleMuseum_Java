@@ -16,6 +16,9 @@ public class ProcessorStrategyFactory {
         if (action.equals(Action.TALK)) {
             return null;
         }
+        if (action.equals(Action.TAKE)) {
+            return new TakeProcessor();
+        }
         return new GibberishProcessor();
     }
 }

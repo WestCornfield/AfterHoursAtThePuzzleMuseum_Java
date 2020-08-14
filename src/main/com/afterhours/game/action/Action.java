@@ -5,6 +5,7 @@ import java.util.List;
 
 public enum Action {
     MOVE(new String[]{"move", "go", "north", "south", "west", "east", "up", "down", "n", "s", "w", "e", "u", "d"}),
+    TAKE(new String[]{"take", "retrieve", "grab", "obtain"}),
     TALK(new String[]{"talk", "say"}),
     LOOK(new String[]{"look", "examine"}),
     INVENTORY(new String[]{"inventory", "i"}),
