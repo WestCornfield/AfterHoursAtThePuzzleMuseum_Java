@@ -9,6 +9,7 @@ public class ActionParser {
                 for (String synonym: action.getSynonyms()) {
                     if (actionMatch(inputWords, synonym)) {
                         actionToReturn = action;
+                        break;
                     }
                 }
             }

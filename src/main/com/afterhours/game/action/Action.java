@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public enum Action {
-    MOVE(new String[]{"move", "go", "north", "south", "west", "east", "up", "down"}),
+    MOVE(new String[]{"move", "go", "north", "south", "west", "east", "up", "down", "n", "s", "w", "e", "u", "d"}),
     TALK(new String[]{"talk", "say"}),
     LOOK(new String[]{"look", "examine"}),
     INVENTORY(new String[]{"inventory", "i"}),

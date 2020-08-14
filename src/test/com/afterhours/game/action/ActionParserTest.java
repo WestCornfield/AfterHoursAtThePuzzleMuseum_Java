@@ -32,6 +32,12 @@ class ActionParserTest {
     }
 
     @Test
+    void parseActionNorthSingleLetter() {
+        Action action = testObj.parseAction("n");
+        assertEquals(action.name(), "MOVE");
+    }
+
+    @Test
     void parseActionTalk() {
         Action action = testObj.parseAction("talk to beth");
         assertEquals(action.name(), "TALK");
