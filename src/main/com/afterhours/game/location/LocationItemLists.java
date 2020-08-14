@@ -1,9 +1,9 @@
 package com.afterhours.game.location;
 
+import com.afterhours.game.inventory.Item;
+
 import java.util.Arrays;
 import java.util.List;
-
-import com.afterhours.game.inventory.Item;
 
 public class LocationItemLists {
     public static List<Item> lobbyItemsList = Arrays.asList(new Item[] {Item.LIGHTER, Item.LOST_BOX});

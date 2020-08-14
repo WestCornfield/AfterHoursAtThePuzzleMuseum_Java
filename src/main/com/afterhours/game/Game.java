@@ -1,12 +1,12 @@
 package com.afterhours.game;
 
-import java.util.Scanner;
-
 import com.afterhours.game.action.Action;
 import com.afterhours.game.action.ActionParser;
 import com.afterhours.game.player.Player;
 import com.afterhours.game.strategy.ProcessorStrategy;
 import com.afterhours.game.strategy.ProcessorStrategyFactory;
+
+import java.util.Scanner;
 
 public class Game {
 

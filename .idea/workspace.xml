@@ -21,13 +21,24 @@
   <component name="ChangeListManager">
     <list default="true" id="f038561f-7de2-469f-a62b-e6620829be49" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/AfterHoursAtPuzzleMuseum/com/afterhours/game/action/ActionParserTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/AfterHoursAtPuzzleMuseum/com/afterhours/game/direction/DirectionParserTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/AfterHoursAtPuzzleMuseum/com/afterhours/game/strategy/ExamineProcessorTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/AfterHoursAtPuzzleMuseum/com/afterhours/game/strategy/GibberishProcessorTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/AfterHoursAtPuzzleMuseum/com/afterhours/game/strategy/InventoryProcessorTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/AfterHoursAtPuzzleMuseum/com/afterhours/game/strategy/MovementProcessorTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/afterhours/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/afterhours/game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/afterhours/game/inventory/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/afterhours/game/inventory/Inventory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/com/afterhours/game/location/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/afterhours/game/location/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/com/afterhours/game/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/afterhours/game/player/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/afterhours/game/location/LocationItemLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/afterhours/game/location/LocationItemLists.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -63,6 +74,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -72,7 +84,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.All in AfterHoursAtPuzzleMuseum">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.afterhours.game.Main" />
       <module name="AfterHoursAtPuzzleMuseum" />
@@ -191,14 +203,15 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.All in AfterHoursAtPuzzleMuseum" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.ExamineProcessorTest.testProcessActionLook" />
         <item itemvalue="JUnit.MovementProcessorTest.movementProcessorTest" />
         <item itemvalue="JUnit.ActionParserTest.parseActionNorth" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -228,6 +241,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="120" y="143" width="1200" height="594" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1595825221460">
@@ -278,6 +292,10 @@
     </state>
     <state width="1358" height="252" key="GridCell.Tab.1.right/0.23.1440.833@0.23.1440.833" timestamp="1595825234002" />
     <state width="1358" height="252" key="GridCell.Tab.1.right/0.23.1440.834@0.23.1440.834" timestamp="1595658504164" />
+    <state x="397" y="187" key="SettingsEditor" timestamp="1597381185627">
+      <screen x="0" y="23" width="1792" height="1047" />
+    </state>
+    <state x="397" y="187" key="SettingsEditor/0.23.1792.1047@0.23.1792.1047" timestamp="1597381185627" />
     <state x="459" y="267" key="com.intellij.ide.util.TipDialog" timestamp="1595656337724">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
@@ -310,7 +328,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/com/afterhours/game/inventory/Inventory.java</url>
-          <line>21</line>
+          <line>20</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

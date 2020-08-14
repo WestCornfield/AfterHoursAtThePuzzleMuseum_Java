@@ -1,9 +1,9 @@
 package com.afterhours.game.location;
 
+import com.afterhours.game.inventory.Item;
+
 import java.util.ArrayList;
 import java.util.List;
-
-import com.afterhours.game.inventory.Item;
 
 public enum Location {
     LOBBY(LocationConstants.LOBBY_DESCRIPTION_TEXT, "In the distance, you see the lobby", 0, 0, LocationItemLists.lobbyItemsList),
