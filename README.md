@@ -6,7 +6,8 @@ DONE:
 4. Single word movement
 5. Directional look functionality
 6. Add single letter directional movement
+7. Add take object functionality
 
 WORKING ON NOW:
 
-7. Add take object functionality
+8. Add open object functionality

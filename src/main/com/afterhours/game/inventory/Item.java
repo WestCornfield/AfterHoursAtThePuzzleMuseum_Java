@@ -60,4 +60,8 @@ public enum Item {
     public boolean isTakeable() {
         return takeable;
     }
+
+    public static boolean isOpenable(Item item) {
+        return item.equals(Item.LOST_BOX) || item.equals(Item.DOOR);
+    }
 }

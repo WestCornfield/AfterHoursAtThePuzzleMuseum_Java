@@ -8,6 +8,7 @@ public enum Action {
     TAKE(new String[]{"take", "retrieve", "grab", "obtain"}),
     TALK(new String[]{"talk", "say"}),
     LOOK(new String[]{"look", "examine"}),
+    OPEN(new String[]{"open"}),
     INVENTORY(new String[]{"inventory", "i"}),
     GIBBERISH;
 

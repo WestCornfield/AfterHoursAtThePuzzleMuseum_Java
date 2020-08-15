@@ -73,4 +73,16 @@ public class Player {
         inventory.addToInventory(item);
         return "success";
     }
+
+    public String open(String itemString) {
+        Item item = itemParser.parseItem(itemString);
+        if (item.equals(Item.NOT_FOUND)) {
+            return "failure, not found";
+        } else if (!Item.isOpenable(item)) {
+            return "failure, not openable";
+        } else if(!getLocation().getItemsList().contains(item)) {
+            return "failure, not reachable";
+        }
+        return "success";
+    }
 }
