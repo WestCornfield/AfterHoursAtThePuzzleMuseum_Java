@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -20,13 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f038561f-7de2-469f-a62b-e6620829be49" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/com/afterhours/game/strategy/TakeProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/com/afterhours/game/strategy/TakeProcessorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AfterHoursAtPuzzleMuseum/com/afterhours/game/action/Action.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AfterHoursAtPuzzleMuseum/com/afterhours/game/action/Action.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AfterHoursAtPuzzleMuseum/com/afterhours/game/strategy/ProcessorStrategyFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AfterHoursAtPuzzleMuseum/com/afterhours/game/strategy/ProcessorStrategyFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/com/afterhours/game/action/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/afterhours/game/action/Action.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/com/afterhours/game/strategy/ProcessorStrategyFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/afterhours/game/strategy/ProcessorStrategyFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/afterhours/game/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/afterhours/game/player/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/afterhours/game/strategy/ExamineProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/afterhours/game/strategy/ExamineProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/afterhours/game/strategy/TakeProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/afterhours/game/strategy/TakeProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/com/afterhours/game/strategy/InventoryProcessorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/afterhours/game/strategy/InventoryProcessorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/com/afterhours/game/strategy/TakeProcessorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/afterhours/game/strategy/TakeProcessorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -316,6 +318,10 @@
       <screen x="0" y="23" width="1440" height="833" />
     </state>
     <state x="421" y="72" width="598" height="735" key="find.popup/0.23.1440.833@0.23.1440.833" timestamp="1595824957876" />
+    <state x="559" y="278" width="670" height="676" key="search.everywhere.popup" timestamp="1597463052807">
+      <screen x="0" y="23" width="1792" height="1047" />
+    </state>
+    <state x="559" y="278" width="670" height="676" key="search.everywhere.popup/0.23.1792.1047@0.23.1792.1047" timestamp="1597463052807" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -337,7 +343,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/com/afterhours/game/strategy/InventoryProcessorTest.java</url>
-          <line>18</line>
+          <line>17</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -357,12 +363,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/com/afterhours/game/player/Player.java</url>
-          <line>61</line>
+          <line>64</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/com/afterhours/game/strategy/TakeProcessorTest.java</url>
-          <line>21</line>
+          <line>23</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
