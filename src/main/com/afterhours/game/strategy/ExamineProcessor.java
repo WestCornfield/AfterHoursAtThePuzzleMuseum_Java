@@ -43,12 +43,10 @@ public class ExamineProcessor implements ProcessorStrategy {
         StringBuilder item = new StringBuilder();
         for (int i = 2; i<input.length; i++) {
             item.append(input[i]);
-            if (i != input.length -1) {
-                item.append(' ');
-            }
+            item.append(' ');
         }
 
-        return item.toString();
+        return item.toString().trim();
     }
 
     private boolean canSeeFromHere(Player player, Item item) {

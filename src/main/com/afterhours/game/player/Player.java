@@ -2,15 +2,18 @@ package com.afterhours.game.player;
 
 import com.afterhours.game.inventory.Inventory;
 import com.afterhours.game.inventory.Item;
+import com.afterhours.game.inventory.ItemParser;
 import com.afterhours.game.location.Location;
 
 public class Player {
     private Inventory inventory;
     private Location location;
+    private ItemParser itemParser;
 
     public Player() {
         inventory = new Inventory(new Item[]{Item.BADGE, Item.NIGHTSTICK});
         location = Location.LOBBY;
+        itemParser = new ItemParser();
     }
 
     public Location getLocation() {
@@ -58,7 +61,12 @@ public class Player {
         return "Pardon?";
     }
 
-    public void pickup(Item item) {
-        inventory.addToInventory(item);
+    public boolean pickup(String itemString) {
+        Item item = itemParser.parseItem(itemString);
+        if (!item.equals(Item.NOT_FOUND) && item.isTakeable()) {
+            inventory.addToInventory(item);
+            return true;
+        }
+        return false;
     }
 }
