@@ -61,12 +61,16 @@ public class Player {
         return "Pardon?";
     }
 
-    public boolean pickup(String itemString) {
+    public String pickup(String itemString) {
         Item item = itemParser.parseItem(itemString);
-        if (!item.equals(Item.NOT_FOUND) && item.isTakeable()) {
-            inventory.addToInventory(item);
-            return true;
+        if (item.equals(Item.NOT_FOUND)) {
+            return "failure, not found";
+        } else if (!item.isTakeable()) {
+            return "failure, not takeable";
+        } else if(!getLocation().getItemsList().contains(item)) {
+            return "failure, not reachable";
         }
-        return false;
+        inventory.addToInventory(item);
+        return "success";
     }
 }

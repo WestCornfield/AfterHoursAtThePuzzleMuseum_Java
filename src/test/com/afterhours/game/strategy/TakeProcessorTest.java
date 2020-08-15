@@ -17,6 +17,7 @@ public class TakeProcessorTest {
         String[] take = {"take"};
         String[] takeLighter = {"take", "lighter"};
         String[] takeLostBox = {"take", "lost", "box"};
+        String[] takeMagazine = {"take", "magazine"};
 
         String testValue = testObj.processAction(player, take);
         assertEquals(testValue, "Take what?");
@@ -28,5 +29,9 @@ public class TakeProcessorTest {
         testValue = testObj.processAction(player, takeLostBox);
         assertEquals(testValue, "You can't take the lost box");
         assertFalse(player.getInventory().getInventory().contains(Item.LOST_BOX));
+
+        testValue = testObj.processAction(player, takeMagazine);
+        assertEquals(testValue, "You can't reach the magazine from here");
+        assertFalse(player.getInventory().getInventory().contains(Item.MAGAZINE));
     }
 }

@@ -8,8 +8,8 @@ public class TakeProcessor implements ProcessorStrategy {
             return "Take what?";
         }
         String object = buildObject(input);
-        boolean taken = player.pickup(object);
-        return (taken) ? "You have taken the " + object : "You can't take the " + object;
+        String result = player.pickup(object);
+        return processTakeResult(result, object);
     }
 
     public String buildObject(String[] input) {
@@ -19,5 +19,17 @@ public class TakeProcessor implements ProcessorStrategy {
             builder.append(" ");
         }
         return builder.toString().trim();
+    }
+
+    public String processTakeResult(String result, String object) {
+        if (result.equals("success")) {
+            return "You have taken the " + object;
+        } else if (result.equals("failure, not found")) {
+            return "Sorry, you want to take what?";
+        } else if (result.equals("failure, not takeable")) {
+            return "You can't take the " + object;
+        } else {
+            return "You can't reach the " + object + " from here";
+        }
     }
 }
