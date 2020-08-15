@@ -23,12 +23,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f038561f-7de2-469f-a62b-e6620829be49" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/com/afterhours/game/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/afterhours/game/player/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/com/afterhours/game/strategy/ExamineProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/afterhours/game/strategy/ExamineProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/com/afterhours/game/strategy/TakeProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/afterhours/game/strategy/TakeProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/afterhours/game/strategy/InventoryProcessorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/afterhours/game/strategy/InventoryProcessorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/afterhours/game/strategy/TakeProcessorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/afterhours/game/strategy/TakeProcessorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AfterHoursAtPuzzleMuseum/com/afterhours/game/Game.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AfterHoursAtPuzzleMuseum/com/afterhours/game/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AfterHoursAtPuzzleMuseum/com/afterhours/game/action/Action.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AfterHoursAtPuzzleMuseum/com/afterhours/game/action/ActionParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AfterHoursAtPuzzleMuseum/com/afterhours/game/direction/Direction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AfterHoursAtPuzzleMuseum/com/afterhours/game/direction/DirectionParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AfterHoursAtPuzzleMuseum/com/afterhours/game/inventory/Inventory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AfterHoursAtPuzzleMuseum/com/afterhours/game/inventory/Item.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AfterHoursAtPuzzleMuseum/com/afterhours/game/inventory/ItemConstants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AfterHoursAtPuzzleMuseum/com/afterhours/game/location/Location.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AfterHoursAtPuzzleMuseum/com/afterhours/game/location/LocationConstants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AfterHoursAtPuzzleMuseum/com/afterhours/game/location/LocationItemLists.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AfterHoursAtPuzzleMuseum/com/afterhours/game/player/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AfterHoursAtPuzzleMuseum/com/afterhours/game/strategy/ExamineProcessor$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AfterHoursAtPuzzleMuseum/com/afterhours/game/strategy/ExamineProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AfterHoursAtPuzzleMuseum/com/afterhours/game/strategy/GibberishProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AfterHoursAtPuzzleMuseum/com/afterhours/game/strategy/InventoryProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AfterHoursAtPuzzleMuseum/com/afterhours/game/strategy/MovementProcessor$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AfterHoursAtPuzzleMuseum/com/afterhours/game/strategy/MovementProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AfterHoursAtPuzzleMuseum/com/afterhours/game/strategy/ProcessorStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AfterHoursAtPuzzleMuseum/com/afterhours/game/strategy/ProcessorStrategyFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AfterHoursAtPuzzleMuseum/main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/AfterHoursAtPuzzleMuseum/com/afterhours/game/action/ActionParserTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/AfterHoursAtPuzzleMuseum/com/afterhours/game/direction/DirectionParserTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/AfterHoursAtPuzzleMuseum/com/afterhours/game/strategy/ExamineProcessorTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/AfterHoursAtPuzzleMuseum/com/afterhours/game/strategy/GibberishProcessorTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/AfterHoursAtPuzzleMuseum/com/afterhours/game/strategy/InventoryProcessorTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/AfterHoursAtPuzzleMuseum/com/afterhours/game/strategy/MovementProcessorTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -249,30 +271,34 @@
       <screen x="0" y="23" width="1440" height="833" />
     </state>
     <state x="479" y="306" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1440.833@0.23.1440.833" timestamp="1595823830415" />
-    <state width="1750" height="324" key="GridCell.Tab.0.bottom" timestamp="1597383694440">
-      <screen x="0" y="23" width="1792" height="1047" />
+    <state width="1750" height="286" key="GridCell.Tab.0.bottom" timestamp="1597463752062">
+      <screen x="0" y="23" width="1792" height="1048" />
     </state>
     <state width="1358" height="203" key="GridCell.Tab.0.bottom/0.23.1440.833@0.23.1440.833" timestamp="1595826260309" />
     <state width="1358" height="203" key="GridCell.Tab.0.bottom/0.23.1440.834@0.23.1440.834" timestamp="1595815630336" />
     <state width="1750" height="324" key="GridCell.Tab.0.bottom/0.23.1792.1047@0.23.1792.1047" timestamp="1597383694440" />
-    <state width="1750" height="324" key="GridCell.Tab.0.center" timestamp="1597383694440">
-      <screen x="0" y="23" width="1792" height="1047" />
+    <state width="1750" height="286" key="GridCell.Tab.0.bottom/0.23.1792.1048@0.23.1792.1048" timestamp="1597463752062" />
+    <state width="1750" height="286" key="GridCell.Tab.0.center" timestamp="1597463752061">
+      <screen x="0" y="23" width="1792" height="1048" />
     </state>
     <state width="1358" height="203" key="GridCell.Tab.0.center/0.23.1440.833@0.23.1440.833" timestamp="1595826260309" />
     <state width="1358" height="203" key="GridCell.Tab.0.center/0.23.1440.834@0.23.1440.834" timestamp="1595815630335" />
     <state width="1750" height="324" key="GridCell.Tab.0.center/0.23.1792.1047@0.23.1792.1047" timestamp="1597383694440" />
-    <state width="1750" height="324" key="GridCell.Tab.0.left" timestamp="1597383694439">
-      <screen x="0" y="23" width="1792" height="1047" />
+    <state width="1750" height="286" key="GridCell.Tab.0.center/0.23.1792.1048@0.23.1792.1048" timestamp="1597463752061" />
+    <state width="1750" height="286" key="GridCell.Tab.0.left" timestamp="1597463752061">
+      <screen x="0" y="23" width="1792" height="1048" />
     </state>
     <state width="1358" height="203" key="GridCell.Tab.0.left/0.23.1440.833@0.23.1440.833" timestamp="1595826260308" />
     <state width="1358" height="203" key="GridCell.Tab.0.left/0.23.1440.834@0.23.1440.834" timestamp="1595815630335" />
     <state width="1750" height="324" key="GridCell.Tab.0.left/0.23.1792.1047@0.23.1792.1047" timestamp="1597383694439" />
-    <state width="1750" height="324" key="GridCell.Tab.0.right" timestamp="1597383694440">
-      <screen x="0" y="23" width="1792" height="1047" />
+    <state width="1750" height="286" key="GridCell.Tab.0.left/0.23.1792.1048@0.23.1792.1048" timestamp="1597463752061" />
+    <state width="1750" height="286" key="GridCell.Tab.0.right" timestamp="1597463752061">
+      <screen x="0" y="23" width="1792" height="1048" />
     </state>
     <state width="1358" height="203" key="GridCell.Tab.0.right/0.23.1440.833@0.23.1440.833" timestamp="1595826260309" />
     <state width="1358" height="203" key="GridCell.Tab.0.right/0.23.1440.834@0.23.1440.834" timestamp="1595815630335" />
     <state width="1750" height="324" key="GridCell.Tab.0.right/0.23.1792.1047@0.23.1792.1047" timestamp="1597383694440" />
+    <state width="1750" height="286" key="GridCell.Tab.0.right/0.23.1792.1048@0.23.1792.1048" timestamp="1597463752061" />
     <state width="1750" height="324" key="GridCell.Tab.1.bottom" timestamp="1597383685718">
       <screen x="0" y="23" width="1792" height="1047" />
     </state>
