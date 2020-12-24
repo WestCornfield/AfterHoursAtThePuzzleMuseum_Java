@@ -73,17 +73,32 @@ public enum Item {
     public String getDescription() {
         String displayDescription = (hasBeenSeen) ? description : firstDescription;
         if (isOpenable(this)) {
-            displayDescription += "\nIt is currently " + ((isOpen) ? "open." : "closed.");
-
-            if (getContents().size() != 0) {
-                displayDescription += " Inside you find ";
-                for (Item containedItem: getContents()) {
-                    //String article = (ItemUtils.startsWithAVowel(containedItem.name());
-                    displayDescription += "a "+containedItem.name() +", ";
-                }
-            }
+            displayDescription += getOpenStatus();
         }
         return displayDescription;
+    }
+
+    private String getOpenStatus() {
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("\n\nIt is currently ");
+
+        if (isOpen()) {
+            stringBuilder.append("open.");
+            if (getContents().size() > 0) {
+                stringBuilder.append(" Inside you find ");
+                stringBuilder.append(ItemUtils.generateListOfItems(getContents()));
+                stringBuilder.append(" and... no, that's it.");
+            } else if (getContents().size() == 0) {
+                stringBuilder.append("Alas, it is empty.");
+            } else {
+                //IS THIS POSSIBLE? I think probably not, but I VERY MUCH HOPE SO
+                stringBuilder.append("Somehow, it's even less than empty.");
+            }
+        } else {
+            stringBuilder.append("closed.");
+        }
+
+        return stringBuilder.toString();
     }
 
     public List<String> getSynonyms() {
@@ -104,6 +119,10 @@ public enum Item {
 
     public void open() {
         this.isOpen = true;
+    }
+
+    public void close() {
+        this.isOpen = false;
     }
 
     public List<Item> getContents() { return contents; }

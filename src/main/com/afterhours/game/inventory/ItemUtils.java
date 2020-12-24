@@ -24,4 +24,13 @@ public class ItemUtils {
                 itemText.substring(0, 1).equalsIgnoreCase("o") ||
                 itemText.substring(0, 1).equalsIgnoreCase("u");
     }
+
+    public static String buildItem(String[] input) {
+        StringBuilder builder = new StringBuilder();
+        for (int index=1; index < input.length; index++) {
+            builder.append(input[index]);
+            builder.append(" ");
+        }
+        return builder.toString().trim();
+    }
 }

@@ -75,16 +75,34 @@ public class Player {
         return "success";
     }
 
-    public String open(String itemString) {
-        Item item = itemParser.parseItem(itemString);
+    private String verifyItemOpenable(Item item) {
         if (item.equals(Item.NOT_FOUND)) {
             return "failure, not found";
         } else if (!Item.isOpenable(item)) {
             return "failure, not openable";
         } else if(!getLocation().getItemsList().contains(item)) {
             return "failure, not reachable";
+        } else if (item.isOpen()) {
+            return "success,open";
         }
-        item.open();
-        return "success";
+        return "success," + (item.isOpen() ? "open" : "closed");
+    }
+
+    public String open(String itemString) {
+        Item item = itemParser.parseItem(itemString);
+        String status = verifyItemOpenable(item);
+        if (status.equals("success,closed")) {
+            item.open();
+        }
+        return status;
+    }
+
+    public String close(String itemString) {
+        Item item = itemParser.parseItem(itemString);
+        String status = verifyItemOpenable(item);
+        if (status.equals("success,open")) {
+            item.close();
+        }
+        return status;
     }
 }

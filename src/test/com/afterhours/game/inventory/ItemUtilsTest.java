@@ -17,6 +17,6 @@ public class ItemUtilsTest {
 
         String listOfItems = ItemUtils.generateListOfItems(items);
 
-        assertEquals("a lost box, a magazine, and a nail file", listOfItems);
+        assertEquals("a lost box, a magazine, a nail file, ", listOfItems);
     }
 }

@@ -12,3 +12,4 @@ DONE:
 WORKING ON NOW:
 
 9. Nested objects (Objects in other objects)
+10. Code stuffs - Replace the long if in the ProcessorStrategyFactory with a switch

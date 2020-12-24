@@ -1,5 +1,6 @@
 package com.afterhours.game.strategy;
 
+import com.afterhours.game.inventory.ItemUtils;
 import com.afterhours.game.player.Player;
 
 public class TakeProcessor implements ProcessorStrategy {
@@ -7,18 +8,9 @@ public class TakeProcessor implements ProcessorStrategy {
         if (input.length == 1) {
             return "Take what?";
         }
-        String object = buildObject(input);
-        String result = player.pickup(object);
-        return processTakeResult(result, object);
-    }
-
-    public String buildObject(String[] input) {
-        StringBuilder builder = new StringBuilder();
-        for (int index=1; index < input.length; index++) {
-            builder.append(input[index]);
-            builder.append(" ");
-        }
-        return builder.toString().trim();
+        String item = ItemUtils.buildItem(input);
+        String result = player.pickup(item);
+        return processTakeResult(result, item);
     }
 
     public String processTakeResult(String result, String object) {

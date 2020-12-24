@@ -8,32 +8,33 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class OpenProcessorTest {
-    OpenProcessor testObj = new OpenProcessor();
+public class CloseProcessorTest {
+    CloseProcessor testObj = new CloseProcessor();
 
     @Test
-    public void openProcessorTest() {
-        Item.LOST_BOX.close();
+    public void closeProcessorTest() {
+        Item.LOST_BOX.open();
 
         Player player = new Player();
-        String[] open = {"open"};
-        String[] openLighter = {"open", "lighter"};
-        String[] openLostBox = {"open", "lost", "box"};
+        String[] open = {"close"};
+        String[] openLighter = {"close", "lighter"};
+        String[] openLostBox = {"close", "lost", "box"};
 
         String testValue = testObj.processAction(player, open);
-        assertEquals(testValue, "Open what?");
+        assertEquals(testValue, "Close what?");
 
         testValue = testObj.processAction(player, openLighter);
-        assertEquals("You can't open the lighter", testValue);
-
-        assertFalse(Item.LOST_BOX.isOpen());
-
-        testValue = testObj.processAction(player, openLostBox);
-        assertEquals("You have opened the lost box", testValue);
+        assertEquals("You can't close the lighter", testValue);
 
         assertTrue(Item.LOST_BOX.isOpen());
 
         testValue = testObj.processAction(player, openLostBox);
-        assertEquals("The lost box is already open", testValue);
+        assertEquals("You have closed the lost box", testValue);
+
+        assertFalse(Item.LOST_BOX.isOpen());
+
+        testValue = testObj.processAction(player, openLostBox);
+        assertEquals("The lost box is already closed", testValue);
+
     }
 }
