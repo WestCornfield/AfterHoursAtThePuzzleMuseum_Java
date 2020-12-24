@@ -44,4 +44,16 @@ public enum Location {
     public List<Item> getItemsList() {
         return itemsList;
     }
+
+    public void setItemsList(ArrayList<Item> itemsList) {
+        this.itemsList = itemsList;
+    }
+
+    public void dropItem(Item item) {
+        itemsList.add(item);
+    }
+
+    public void takeItem(Item item) {
+        itemsList.remove(item);
+    }
 }

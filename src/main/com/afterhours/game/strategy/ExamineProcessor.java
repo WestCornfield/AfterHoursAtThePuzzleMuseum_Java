@@ -51,7 +51,7 @@ public class ExamineProcessor implements ProcessorStrategy {
 
     private boolean canSeeFromHere(Player player, Item item) {
         Inventory inventory = player.getInventory();
-        boolean playerHasItem = inventory.getInventory().contains(item);
+        boolean playerHasItem = inventory.getInventoryContents().contains(item);
         boolean playerIsInRoomWithItem = player.getLocation().getItemsList().contains(item);
         return playerHasItem || playerIsInRoomWithItem;
     }

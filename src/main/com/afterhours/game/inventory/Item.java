@@ -6,7 +6,7 @@ import java.util.List;
 public enum Item {
     POSTER(ItemConstants.POSTER_DESCRIPTION_TEXT, false, new String[] {"poster"}),
     NIGHTSTICK("It's a nightstick.", true, new String[] {"nightstick", "stick"}),
-    BADGE(ItemConstants.BADGE_DESCRIPTION_TEXT, true, new String[] {"stick"}),
+    BADGE(ItemConstants.BADGE_DESCRIPTION_TEXT, true, new String[] {"badge"}),
     LIGHTER(ItemConstants.LIGHTER_DESCRIPTION_TEXT, true, new String[] {"lighter"}),
     LOST_BOX(ItemConstants.LOST_BOX_DESCRIPTION_TEXT, false, new String[] {"lost box", "box", "lost and found"}, new Item[] {Item.POSTER}),
     STICK_OF_GUM("It's a stick of gum.", true, new String[] {"gum", "stick of gum"}),

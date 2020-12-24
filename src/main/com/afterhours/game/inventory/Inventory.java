@@ -13,11 +13,15 @@ public class Inventory {
         }
     }
 
-    public List<Item> getInventory() {
+    public List<Item> getInventoryContents() {
         return itemsList;
     }
 
     public void addToInventory(Item item) {
         itemsList.add(item);
+    }
+
+    public void removeFromInventory(Item item) {
+        itemsList.remove(item);
     }
 }

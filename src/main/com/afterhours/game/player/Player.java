@@ -27,11 +27,11 @@ public class Player {
 
     public String printInventory() {
         StringBuilder output = new StringBuilder();
-        for (Item item : inventory.getInventory()) {
+        for (Item item : inventory.getInventoryContents()) {
             output.append("a " + item.toString().toLowerCase() + ", ");
         }
 
-        return "In your possessions, you have " + ItemUtils.generateListOfItems(inventory.getInventory()) + "and the lint in your pockets.";
+        return "In your possessions, you have " + ItemUtils.generateListOfItems(inventory.getInventoryContents()) + "and the lint in your pockets.";
     }
 
     public String look(int x, int y) {
@@ -68,11 +68,24 @@ public class Player {
             return "failure, not found";
         } else if (!item.isTakeable()) {
             return "failure, not takeable";
-        } else if(!getLocation().getItemsList().contains(item)) {
+        } else if(!location.getItemsList().contains(item)) {
             return "failure, not reachable";
         }
         inventory.addToInventory(item);
+        location.takeItem(item);
         return "success";
+    }
+
+    public String drop(String itemString) {
+        Item item = itemParser.parseItem(itemString);
+        if (item.equals(Item.NOT_FOUND)) {
+            return "failure, not found";
+        } else if(!inventory.getInventoryContents().contains(item)) {
+            return "failure, not possessed";
+        }
+        inventory.removeFromInventory(item);
+        location.dropItem(item);
+        return "success,dropped";
     }
 
     private String verifyItemOpenable(Item item) {
