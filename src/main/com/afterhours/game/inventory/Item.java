@@ -4,10 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public enum Item {
+    POSTER(ItemConstants.POSTER_DESCRIPTION_TEXT, false, new String[] {"poster"}),
     NIGHTSTICK("It's a nightstick.", true, new String[] {"nightstick", "stick"}),
     BADGE(ItemConstants.BADGE_DESCRIPTION_TEXT, true, new String[] {"stick"}),
     LIGHTER(ItemConstants.LIGHTER_DESCRIPTION_TEXT, true, new String[] {"lighter"}),
-    LOST_BOX(ItemConstants.LOST_BOX_DESCRIPTION_TEXT, false, new String[] {"lost box", "box", "lost and found"}),
+    LOST_BOX(ItemConstants.LOST_BOX_DESCRIPTION_TEXT, false, new String[] {"lost box", "box", "lost and found"}, new Item[] {Item.POSTER}),
     STICK_OF_GUM("It's a stick of gum.", true, new String[] {"gum", "stick of gum"}),
     MAZE("It's a Labyrinth", false, new String[] {"maze", "labyrinth"}),
     MAZE_WALL("It's the wall of a Labyrinth", false, new String[] {"wall", "maze wall", "labyrinth wall"}),
@@ -27,6 +28,23 @@ public enum Item {
     private boolean takeable;
     private boolean isOpen;
     private List<String> synonyms;
+    private List<Item> contents;
+
+    Item(String description, boolean takeable, String[] synonyms, Item[] contents) {
+        this.description = description;
+        this.firstDescription = description;
+        this.hasBeenSeen = true;
+        this.takeable = takeable;
+        this.synonyms = new ArrayList<>();
+        for (String synonym: synonyms) {
+            this.synonyms.add(synonym);
+        }
+        this.isOpen = false;
+        this.contents = new ArrayList<>();
+        for (Item content: contents) {
+            this.contents.add(content);
+        }
+    }
 
     Item(String description, boolean takeable, String[] synonyms) {
         this.description = description;
@@ -56,6 +74,14 @@ public enum Item {
         String displayDescription = (hasBeenSeen) ? description : firstDescription;
         if (isOpenable(this)) {
             displayDescription += "\nIt is currently " + ((isOpen) ? "open." : "closed.");
+
+            if (getContents().size() != 0) {
+                displayDescription += " Inside you find ";
+                for (Item containedItem: getContents()) {
+                    //String article = (ItemUtils.startsWithAVowel(containedItem.name());
+                    displayDescription += "a "+containedItem.name() +", ";
+                }
+            }
         }
         return displayDescription;
     }
@@ -78,5 +104,11 @@ public enum Item {
 
     public void open() {
         this.isOpen = true;
+    }
+
+    public List<Item> getContents() { return contents; }
+
+    public String getItemName() {
+        return this.name().replace('_', ' ').toLowerCase();
     }
 }

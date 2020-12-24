@@ -7,7 +7,8 @@ DONE:
 5. Directional look functionality
 6. Add single letter directional movement
 7. Add take object functionality
+8. Add open object functionality
 
 WORKING ON NOW:
 
-8. Add open object functionality
+9. Nested objects (Objects in other objects)

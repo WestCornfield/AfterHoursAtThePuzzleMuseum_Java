@@ -51,4 +51,10 @@ public class ItemConstants {
     public static String NAIL_FILE_DESCRIPTION_TEXT = "It's a nail file. You can use it fo file your nails.";
 
     public static String BADGE_DESCRIPTION_TEXT = "Your trusty security badge";
+
+    public static String POSTER_DESCRIPTION_TEXT = "You see a poster. It's an image of a dapper, mustacchioed man with a lightbulb gleaming over his head." +
+            "\n" +
+            "The message on the poster reads 'A very special opportunity! If you can solve the riddle of the Puzzle Museum, its founder Connor Conundrum will bequeth unto you the entire puzzle museum!'." +
+            "\n" +
+            "Huh. It's your first day, but you feel like someone would have mentioned this to you.";
 }

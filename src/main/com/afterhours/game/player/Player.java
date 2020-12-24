@@ -3,6 +3,7 @@ package com.afterhours.game.player;
 import com.afterhours.game.inventory.Inventory;
 import com.afterhours.game.inventory.Item;
 import com.afterhours.game.inventory.ItemParser;
+import com.afterhours.game.inventory.ItemUtils;
 import com.afterhours.game.location.Location;
 
 public class Player {
@@ -30,7 +31,7 @@ public class Player {
             output.append("a " + item.toString().toLowerCase() + ", ");
         }
 
-        return "In your possessions, you have " + output + "and the lint in your pockets.";
+        return "In your possessions, you have " + ItemUtils.generateListOfItems(inventory.getInventory()) + "and the lint in your pockets.";
     }
 
     public String look(int x, int y) {
