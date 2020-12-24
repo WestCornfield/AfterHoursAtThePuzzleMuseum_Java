@@ -25,6 +25,7 @@ public enum Item {
     private String firstDescription;
     private boolean hasBeenSeen;
     private boolean takeable;
+    private boolean isOpen;
     private List<String> synonyms;
 
     Item(String description, boolean takeable, String[] synonyms) {
@@ -36,6 +37,7 @@ public enum Item {
         for (String synonym: synonyms) {
             this.synonyms.add(synonym);
         }
+        this.isOpen = false;
     }
 
     Item(String description, String firstDescription, String[] synonyms) {
@@ -47,10 +49,15 @@ public enum Item {
         for (String synonym: synonyms) {
             this.synonyms.add(synonym);
         }
+        this.isOpen = false;
     }
 
     public String getDescription() {
-        return (hasBeenSeen) ? description : firstDescription;
+        String displayDescription = (hasBeenSeen) ? description : firstDescription;
+        if (isOpenable(this)) {
+            displayDescription += "\nIt is currently " + ((isOpen) ? "open." : "closed.");
+        }
+        return displayDescription;
     }
 
     public List<String> getSynonyms() {
@@ -63,5 +70,13 @@ public enum Item {
 
     public static boolean isOpenable(Item item) {
         return item.equals(Item.LOST_BOX) || item.equals(Item.DOOR);
+    }
+
+    public boolean isOpen() {
+        return this.isOpen;
+    }
+
+    public void open() {
+        this.isOpen = true;
     }
 }

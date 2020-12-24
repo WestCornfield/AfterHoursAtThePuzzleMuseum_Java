@@ -83,6 +83,7 @@ public class Player {
         } else if(!getLocation().getItemsList().contains(item)) {
             return "failure, not reachable";
         }
+        item.open();
         return "success";
     }
 }
