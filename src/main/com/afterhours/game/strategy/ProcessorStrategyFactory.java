@@ -4,27 +4,15 @@ import com.afterhours.game.action.Action;
 
 public class ProcessorStrategyFactory {
     public ProcessorStrategy determineStrategy(Action action) {
-        if (action.equals(Action.INVENTORY)) {
-            return new InventoryProcessor();
+        switch (action) {
+            case INVENTORY: return new InventoryProcessor();
+            case LOOK: return new ExamineProcessor();
+            case MOVE: return new MovementProcessor();
+            case TALK: return null;
+            case TAKE: return new TakeProcessor();
+            case OPEN: return new OpenProcessor();
+            case CLOSE: return new CloseProcessor();
+            default: return new GibberishProcessor();
         }
-        if (action.equals(Action.LOOK)) {
-            return new ExamineProcessor();
-        }
-        if (action.equals(Action.MOVE)) {
-            return new MovementProcessor();
-        }
-        if (action.equals(Action.TALK)) {
-            return null;
-        }
-        if (action.equals(Action.TAKE)) {
-            return new TakeProcessor();
-        }
-        if (action.equals(Action.OPEN)) {
-            return new OpenProcessor();
-        }
-        if (action.equals(Action.CLOSE)) {
-            return new CloseProcessor();
-        }
-        return new GibberishProcessor();
     }
 }
