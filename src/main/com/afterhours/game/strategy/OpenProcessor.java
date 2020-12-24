@@ -14,16 +14,12 @@ public class OpenProcessor implements ProcessorStrategy {
     }
 
     public String processOpenResult(String result, String object) {
-        if (result.equals("success,closed")) {
-            return "You have opened the " + object;
-        } else if (result.equals("success,open")) {
-            return "The "+object+" is already open";
-        } else if (result.equals("failure, not found")) {
-            return "Sorry, you want to take what?";
-        } else if (result.equals("failure, not openable")) {
-            return "You can't open the " + object;
-        } else {
-            return "You can't reach the " + object + " from here";
+        switch (result) {
+            case "success,closed": return "You have opened the " + object;
+            case "success,open": return "The " + object + " is already open";
+            case "failure, not found": return "Sorry, you want to open what?";
+            case "failure, not openable": return "You can't open the " + object;
+            default: return "You can't reach the " + object + " from here";
         }
     }
 }

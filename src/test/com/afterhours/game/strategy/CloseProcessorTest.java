@@ -16,25 +16,24 @@ public class CloseProcessorTest {
         Item.LOST_BOX.open();
 
         Player player = new Player();
-        String[] open = {"close"};
-        String[] openLighter = {"close", "lighter"};
-        String[] openLostBox = {"close", "lost", "box"};
+        String[] close = {"close"};
+        String[] closeLighter = {"close", "lighter"};
+        String[] closeLostBox = {"close", "lost", "box"};
 
-        String testValue = testObj.processAction(player, open);
+        String testValue = testObj.processAction(player, close);
         assertEquals(testValue, "Close what?");
 
-        testValue = testObj.processAction(player, openLighter);
+        testValue = testObj.processAction(player, closeLighter);
         assertEquals("You can't close the lighter", testValue);
 
         assertTrue(Item.LOST_BOX.isOpen());
 
-        testValue = testObj.processAction(player, openLostBox);
+        testValue = testObj.processAction(player, closeLostBox);
         assertEquals("You have closed the lost box", testValue);
 
         assertFalse(Item.LOST_BOX.isOpen());
 
-        testValue = testObj.processAction(player, openLostBox);
+        testValue = testObj.processAction(player, closeLostBox);
         assertEquals("The lost box is already closed", testValue);
-
     }
 }

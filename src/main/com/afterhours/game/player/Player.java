@@ -82,8 +82,6 @@ public class Player {
             return "failure, not openable";
         } else if(!getLocation().getItemsList().contains(item)) {
             return "failure, not reachable";
-        } else if (item.isOpen()) {
-            return "success,open";
         }
         return "success," + (item.isOpen() ? "open" : "closed");
     }

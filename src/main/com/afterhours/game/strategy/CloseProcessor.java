@@ -14,16 +14,12 @@ public class CloseProcessor implements ProcessorStrategy  {
     }
 
     public String processCloseResult(String result, String object) {
-        if (result.equals("success,open")) {
-            return "You have closed the " + object;
-        } else if (result.equals("success,closed")) {
-            return "The "+object+" is already closed";
-        } else if (result.equals("failure, not found")) {
-            return "Sorry, you want to close what?";
-        } else if (result.equals("failure, not openable")) {
-            return "You can't close the " + object;
-        } else {
-            return "You can't reach the " + object + " from here";
+        switch (result) {
+            case "success,open": return "You have closed the " + object;
+            case "success,closed": return "The " + object + " is already closed";
+            case "failure, not found": return "Sorry, you want to close what?";
+            case "failure, not openable": return "You can't close the " + object;
+            default: return "You can't reach the " + object + " from here";
         }
     }
 }
