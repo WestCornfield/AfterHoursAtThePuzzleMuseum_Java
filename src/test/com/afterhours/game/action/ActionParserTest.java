@@ -62,6 +62,12 @@ class ActionParserTest {
     }
 
     @Test
+    void parseActionClose() {
+        Action action = testObj.parseAction("close");
+        assertEquals(action.name(), "CLOSE");
+    }
+
+    @Test
     void parseActionInventory() {
         Action action = testObj.parseAction("inventory");
         assertEquals(action.name(), "INVENTORY");

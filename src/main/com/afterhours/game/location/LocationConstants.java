@@ -18,6 +18,4 @@ public class LocationConstants {
             "In front of you is the door to the partial globe's interior. Sitting beside the door on the left side is a small table. Resting on the tabletop is a magazine and a nail file.\n" +
             "\n" +
             "To the right of the door is a small stone plaque with a stylish emblazoned engraving \"KEYHOLE NEWSPAPER TRICK\" in a tasteful Garamond font with a helpful description underneath.";
-
-
 }

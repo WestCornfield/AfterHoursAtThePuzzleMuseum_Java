@@ -109,6 +109,10 @@ public enum Item {
         return takeable;
     }
 
+    public void setTakeable(boolean takeable) {
+        this.takeable = takeable;
+    }
+
     public static boolean isOpenable(Item item) {
         return item.equals(Item.LOST_BOX) || item.equals(Item.DOOR);
     }
@@ -119,10 +123,16 @@ public enum Item {
 
     public void open() {
         this.isOpen = true;
+        for (Item item: getContents()) {
+            item.setTakeable(true);
+        }
     }
 
     public void close() {
         this.isOpen = false;
+        for (Item item: getContents()) {
+            item.setTakeable(false);
+        }
     }
 
     public List<Item> getContents() { return contents; }
