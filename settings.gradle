@@ -1,0 +1,3 @@
+rootProject.name = 'AfterHoursAtThePuzzleMuseum'
+include 'java'
+
