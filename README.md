@@ -12,6 +12,7 @@ DONE:
 10. Convert project to a gradle to make it easier to move from machine to machine
 11. Code stuffs - Replace the long if in the ProcessorStrategyFactory with a switch
 12. Add drop object functionality
+13. Add quit game functionality
 
 WORKING ON NOW:
 
