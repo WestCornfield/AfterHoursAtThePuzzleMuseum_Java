@@ -13,6 +13,7 @@ public class ProcessorStrategyFactory {
             case OPEN: return new OpenProcessor();
             case CLOSE: return new CloseProcessor();
             case DROP: return new DropProcessor();
+            case QUIT: return new QuitProcessor();
             default: return new GibberishProcessor();
         }
     }

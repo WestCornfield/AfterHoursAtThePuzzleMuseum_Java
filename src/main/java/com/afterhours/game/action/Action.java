@@ -12,6 +12,7 @@ public enum Action {
     CLOSE(new String[]{"close"}),
     INVENTORY(new String[]{"inventory", "i"}),
     DROP(new String[] {"drop"}),
+    QUIT(new String[] {"quit"}),
     GIBBERISH;
 
     private List<String> synonyms;

@@ -9,9 +9,10 @@ import com.afterhours.game.strategy.ProcessorStrategyFactory;
 import java.util.Scanner;
 
 public class Game {
+    private boolean running;
 
     public Game() {
-
+        running = true;
     }
 
     public void begin() {
@@ -35,12 +36,16 @@ public class Game {
         Player player = new Player();
         ProcessorStrategyFactory processorStrategyFactory = new ProcessorStrategyFactory();
 
-        while (true) {
+        while (running) {
             ActionParser actionParser = new ActionParser();
             String[] input = in.nextLine().split(" ");
             Action action = actionParser.parseAction(input[0]);
             ProcessorStrategy processorStrategy = processorStrategyFactory.determineStrategy(action);
+
             System.out.println(processorStrategy.processAction(player, input));
+            if (processorStrategy.processAction(player, input).equals("Goodbye!")) {
+                running = false;
+            }
         }
     }
 }

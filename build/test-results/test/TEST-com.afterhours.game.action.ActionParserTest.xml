@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.afterhours.game.action.ActionParserTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2021-06-06T16:15:16" hostname="Johns-MacBook-Pro.local" time="0.035">
+<testsuite name="com.afterhours.game.action.ActionParserTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-06T18:30:55" hostname="Johns-MacBook-Pro.local" time="0.015">
   <properties/>
-  <testcase name="parseActionGibberish()" classname="com.afterhours.game.action.ActionParserTest" time="0.017"/>
-  <testcase name="parseActionExamine()" classname="com.afterhours.game.action.ActionParserTest" time="0.001"/>
-  <testcase name="parseActionInventory()" classname="com.afterhours.game.action.ActionParserTest" time="0.0"/>
-  <testcase name="parseActionNorthSingleLetter()" classname="com.afterhours.game.action.ActionParserTest" time="0.001"/>
-  <testcase name="parseActionLook()" classname="com.afterhours.game.action.ActionParserTest" time="0.001"/>
-  <testcase name="parseActionMove()" classname="com.afterhours.game.action.ActionParserTest" time="0.0"/>
-  <testcase name="parseActionTalk()" classname="com.afterhours.game.action.ActionParserTest" time="0.001"/>
-  <testcase name="parseActionClose()" classname="com.afterhours.game.action.ActionParserTest" time="0.001"/>
-  <testcase name="parseActionNorth()" classname="com.afterhours.game.action.ActionParserTest" time="0.0"/>
-  <testcase name="parseActionI()" classname="com.afterhours.game.action.ActionParserTest" time="0.001"/>
-  <testcase name="parseActionSay()" classname="com.afterhours.game.action.ActionParserTest" time="0.0"/>
-  <testcase name="parseActionGo()" classname="com.afterhours.game.action.ActionParserTest" time="0.001"/>
+  <testcase name="parseActionQuit()" classname="com.afterhours.game.action.ActionParserTest" time="0.015"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

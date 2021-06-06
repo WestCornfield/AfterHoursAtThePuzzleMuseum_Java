@@ -10,10 +10,9 @@ DONE:
 8. Add open object functionality
 9. Nested objects (Objects in other objects)
 10. Convert project to a gradle to make it easier to move from machine to machine
-
+11. Code stuffs - Replace the long if in the ProcessorStrategyFactory with a switch
+12. Add drop object functionality
 
 WORKING ON NOW:
 
-11. Code stuffs - Replace the long if in the ProcessorStrategyFactory with a switch
-12. Add drop object functionality
 13. Fix "Examine At" grammar problem
