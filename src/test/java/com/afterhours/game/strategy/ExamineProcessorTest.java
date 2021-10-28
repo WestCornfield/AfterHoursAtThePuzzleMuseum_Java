@@ -41,9 +41,29 @@ public class ExamineProcessorTest {
     }
 
     @Test
+    public void testProcessActionExamineNonExistentObject() {
+        Player player = new Player();
+        String[] input = {"examine", "flargle"};
+        String testValue = testObj.processAction(player, input);
+        assertEquals(testValue, "Examine what?");
+    }
+
+    @Test
     public void testProcessActionLookAtObjectOutsideLobby() {
         Player player = new Player();
         String[] input = {"look", "at", "maze"};
+        String testValue = testObj.processAction(player, input);
+        assertEquals(testValue, "You can't see that from here");
+
+        player.move(-1, 0); //move to Maze
+        testValue = testObj.processAction(player, input);
+        assertEquals(testValue, "It's a Labyrinth");
+    }
+
+    @Test
+    public void testProcessActionExamineObjectOutsideLobby() {
+        Player player = new Player();
+        String[] input = {"examine", "maze"};
         String testValue = testObj.processAction(player, input);
         assertEquals(testValue, "You can't see that from here");
 

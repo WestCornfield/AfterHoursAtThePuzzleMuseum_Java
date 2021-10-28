@@ -35,13 +35,17 @@ public class ExamineProcessor implements ProcessorStrategy {
                     return (canSeeFromHere(player, item)) ? item.getDescription() : "You can't see that from here";
                 }
             }
-            return "Look at what?";
+            return (input[0].equalsIgnoreCase("examine") ? "Examine what?" : "Look at what?");
         }
     }
 
     private String generateItemToSee(String... input) {
         StringBuilder item = new StringBuilder();
-        for (int i = 2; i<input.length; i++) {
+        for (int i = 1; i < input.length; i++) {
+            if (input[i].equals("at")) {
+                continue;
+            }
+
             item.append(input[i]);
             item.append(' ');
         }
